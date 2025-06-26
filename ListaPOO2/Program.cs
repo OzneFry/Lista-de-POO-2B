@@ -19,13 +19,26 @@ while (true)
     var opcao = Console.ReadLine();
     switch (opcao)
     {
-        case "1": Exercicio1App.Run(); break;
-        case "2": Exercicio2App.Run(); break;
-        case "3": Exercicio3App.Run(); break;
-        case "4": Exercicio4App.Run(); break;
-        case "5": Exercicio5App.Run(); break;
-        case "0": return;
-        default: Console.WriteLine("Opção inválida!"); break;
+        case "1":
+            Exercicio1App.Run();
+            break;
+        case "2":
+            Exercicio2App.Run();
+            break;
+        case "3":
+            Exercicio3App.Run();
+            break;
+        case "4":
+            Exercicio4App.Run();
+            break;
+        case "5":
+            Exercicio5App.Run();
+            break;
+        case "0":
+            return;
+        default:
+            Console.WriteLine("Opção inválida!");
+            break;
     }
     Console.WriteLine("\nRetornando ao menu principal...\n");
     Console.WriteLine("Escolha o exercício para rodar:");

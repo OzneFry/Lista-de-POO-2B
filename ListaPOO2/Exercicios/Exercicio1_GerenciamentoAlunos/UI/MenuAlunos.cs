@@ -1,12 +1,13 @@
+using System;
 using ListaPOO2.Exercicios.Exercicio1_GerenciamentoAlunos.Domain;
 using ListaPOO2.Exercicios.Exercicio1_GerenciamentoAlunos.Services;
-using System;
 
 namespace ListaPOO2.Exercicios.Exercicio1_GerenciamentoAlunos.UI
 {
     public class MenuAlunos
     {
         private readonly AlunoService _service;
+
         public MenuAlunos(AlunoService service)
         {
             _service = service;
@@ -26,12 +27,23 @@ namespace ListaPOO2.Exercicios.Exercicio1_GerenciamentoAlunos.UI
                 var opcao = Console.ReadLine();
                 switch (opcao)
                 {
-                    case "1": Cadastrar(); break;
-                    case "2": Listar(); break;
-                    case "3": Alterar(); break;
-                    case "4": Remover(); break;
-                    case "5": return;
-                    default: Console.WriteLine("Opção inválida!"); break;
+                    case "1":
+                        Cadastrar();
+                        break;
+                    case "2":
+                        Listar();
+                        break;
+                    case "3":
+                        Alterar();
+                        break;
+                    case "4":
+                        Remover();
+                        break;
+                    case "5":
+                        return;
+                    default:
+                        Console.WriteLine("Opção inválida!");
+                        break;
                 }
             }
         }
